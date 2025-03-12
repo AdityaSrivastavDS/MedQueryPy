@@ -97,3 +97,57 @@ MedQueryPy/
 ## ✨ Author
 👨‍💻 **Aditya Srivastav**  
 
+
+# Package details
+
+# 📚 MedQueryPy - Fetch PubMed Research Papers Effortlessly
+
+🚀 **MedQueryPy** is a Python package designed to fetch research papers from PubMed based on a user-defined query. It filters results to include only those with at least one author affiliated with pharmaceutical or biotech companies and exports them in a structured format.
+
+---
+
+## 🛠 Installation
+You can install **MedQueryPy** via pip:
+```bash
+pip install medquerypy
+```
+
+---
+
+## 🚀 Usage
+
+### **🔍 Import as a Python Module**
+```python
+from medquerypy import PubMedFetcher
+
+# Define search query
+query = "COVID-19 vaccines"
+
+# Fetch paper IDs
+paper_ids = PubMedFetcher.fetch_pubmed_papers(query)
+print("Paper IDs:", paper_ids)
+
+# Fetch details of each paper
+results = [PubMedFetcher.get_paper_details(pid) for pid in paper_ids]
+print("Paper Details:", results)
+
+# Save results to CSV
+PubMedFetcher.save_to_csv(results, "output.csv")
+print("Results saved to output.csv")
+```
+
+### **📂 Use as a Command-Line Tool**
+#### Fetch papers and print results:
+```bash
+get-papers-list "COVID-19 vaccines"
+```
+
+#### Save results to a CSV file:
+```bash
+get-papers-list "COVID-19 vaccines" -f results.csv
+```
+
+#### Enable Debug Mode:
+```bash
+get-papers-list "COVID-19 vaccines" -d
+```
