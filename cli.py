@@ -1,5 +1,5 @@
 import argparse
-from pubmed_fetcher.fetcher import PubMedFetcher
+from MedQueryPy.fetcher import PubMedFetcher
 
 # Command-line interface
 def main():

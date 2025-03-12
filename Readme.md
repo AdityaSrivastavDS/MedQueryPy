@@ -1,4 +1,4 @@
-# 📚 PubMed Fetcher
+# 📚 MedQueryPy
 
 🚀 A Python tool to fetch research papers from PubMed and filter those with non-academic authors affiliated with pharmaceutical or biotech companies.
 
@@ -23,8 +23,8 @@ pip install poetry
 
 ### 2️⃣ Clone the Repository
 ```bash
-git clone https://github.com/AdityaSrivastavDS/pubmed_fetcher
-cd pubmed_fetcher
+git clone https://github.com/AdityaSrivastavDS/MedQueryPy
+cd MedQueryPy
 ```
 
 ### 3️⃣ Install Dependencies
@@ -55,8 +55,8 @@ poetry run python cli.py "COVID-19 vaccines" -d
 
 ## 🏗 Project Structure
 ```
-pubmed_fetcher/
-│── pubmed_fetcher/        # Package directory
+MedQueryPy/
+│── MedQueryPy/        # Package directory
 │   │── __init__.py        # Makes the folder a Python package
 │   │── fetcher.py         # Module for fetching PubMed papers
 │── cli.py                 # Command-line interface script
