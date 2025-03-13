@@ -1,9 +1,11 @@
 [tool.poetry]
-name = "MedQueryPy"
-version = "0.1.0"
+name = "medquerypy"
+version = "0.1.1"  # Update version
 description = "A Python tool to fetch research papers from PubMed."
 authors = ["Aditya Srivastav <your.email@example.com>"]
 license = "MIT"
+readme = "README.md"  # This ensures the PyPI page uses README.md as the description
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
